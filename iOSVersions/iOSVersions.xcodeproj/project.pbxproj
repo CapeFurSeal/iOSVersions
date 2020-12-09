@@ -3,18 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0488CE0925814E4200C9EC71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488CE0825814E4200C9EC71 /* AppDelegate.swift */; };
 		0488CE0B25814E4200C9EC71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488CE0A25814E4200C9EC71 /* SceneDelegate.swift */; };
-		0488CE0D25814E4200C9EC71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488CE0C25814E4200C9EC71 /* ViewController.swift */; };
 		0488CE1025814E4200C9EC71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0488CE0E25814E4200C9EC71 /* Main.storyboard */; };
 		0488CE1225814E4500C9EC71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0488CE1125814E4400C9EC71 /* Assets.xcassets */; };
 		0488CE1525814E4500C9EC71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0488CE1325814E4500C9EC71 /* LaunchScreen.storyboard */; };
 		0488CE2025814E4500C9EC71 /* iOSVersionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488CE1F25814E4500C9EC71 /* iOSVersionsTests.swift */; };
 		0488CE2B25814E4500C9EC71 /* iOSVersionsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488CE2A25814E4500C9EC71 /* iOSVersionsUITests.swift */; };
+		0488CE4125814FD000C9EC71 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 0488CE4025814FD000C9EC71 /* Kingfisher */; };
+		0488CE462581506D00C9EC71 /* VersionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488CE452581506D00C9EC71 /* VersionsViewController.swift */; };
+		0488CE4E2581508700C9EC71 /* VersionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488CE4D2581508700C9EC71 /* VersionDetailViewController.swift */; };
+		0488CE5B258151A700C9EC71 /* VersionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488CE5A258151A700C9EC71 /* VersionsViewModel.swift */; };
+		0488CE692581522500C9EC71 /* VersionsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488CE682581522500C9EC71 /* VersionsDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +42,6 @@
 		0488CE0525814E4200C9EC71 /* iOSVersions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSVersions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0488CE0825814E4200C9EC71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0488CE0A25814E4200C9EC71 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0488CE0C25814E4200C9EC71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0488CE0F25814E4200C9EC71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0488CE1125814E4400C9EC71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0488CE1425814E4500C9EC71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +52,10 @@
 		0488CE2625814E4500C9EC71 /* iOSVersionsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSVersionsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0488CE2A25814E4500C9EC71 /* iOSVersionsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSVersionsUITests.swift; sourceTree = "<group>"; };
 		0488CE2C25814E4500C9EC71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0488CE452581506D00C9EC71 /* VersionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionsViewController.swift; sourceTree = "<group>"; };
+		0488CE4D2581508700C9EC71 /* VersionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionDetailViewController.swift; sourceTree = "<group>"; };
+		0488CE5A258151A700C9EC71 /* VersionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionsViewModel.swift; sourceTree = "<group>"; };
+		0488CE682581522500C9EC71 /* VersionsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionsDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0488CE4125814FD000C9EC71 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,11 +109,14 @@
 			children = (
 				0488CE0825814E4200C9EC71 /* AppDelegate.swift */,
 				0488CE0A25814E4200C9EC71 /* SceneDelegate.swift */,
-				0488CE0C25814E4200C9EC71 /* ViewController.swift */,
 				0488CE0E25814E4200C9EC71 /* Main.storyboard */,
 				0488CE1125814E4400C9EC71 /* Assets.xcassets */,
 				0488CE1325814E4500C9EC71 /* LaunchScreen.storyboard */,
 				0488CE1625814E4500C9EC71 /* Info.plist */,
+				0488CE3E25814EC300C9EC71 /* Model */,
+				0488CE3D25814E9700C9EC71 /* View Controller */,
+				0488CE3C25814E9000C9EC71 /* Service */,
+				0488CE3B25814E8700C9EC71 /* View Model */,
 			);
 			path = iOSVersions;
 			sourceTree = "<group>";
@@ -128,6 +139,54 @@
 			path = iOSVersionsUITests;
 			sourceTree = "<group>";
 		};
+		0488CE3B25814E8700C9EC71 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		0488CE3C25814E9000C9EC71 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		0488CE3D25814E9700C9EC71 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0488CE592581518500C9EC71 /* Versions Detail */,
+				0488CE582581517B00C9EC71 /* Versions */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		0488CE3E25814EC300C9EC71 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0488CE582581517B00C9EC71 /* Versions */ = {
+			isa = PBXGroup;
+			children = (
+				0488CE452581506D00C9EC71 /* VersionsViewController.swift */,
+				0488CE5A258151A700C9EC71 /* VersionsViewModel.swift */,
+				0488CE682581522500C9EC71 /* VersionsDataSource.swift */,
+			);
+			path = Versions;
+			sourceTree = "<group>";
+		};
+		0488CE592581518500C9EC71 /* Versions Detail */ = {
+			isa = PBXGroup;
+			children = (
+				0488CE4D2581508700C9EC71 /* VersionDetailViewController.swift */,
+			);
+			path = "Versions Detail";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,6 +203,9 @@
 			dependencies = (
 			);
 			name = iOSVersions;
+			packageProductDependencies = (
+				0488CE4025814FD000C9EC71 /* Kingfisher */,
+			);
 			productName = iOSVersions;
 			productReference = 0488CE0525814E4200C9EC71 /* iOSVersions.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +277,9 @@
 				Base,
 			);
 			mainGroup = 0488CDFC25814E4200C9EC71;
+			packageReferences = (
+				0488CE3F25814FD000C9EC71 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 0488CE0625814E4200C9EC71 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,9 +323,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0488CE0D25814E4200C9EC71 /* ViewController.swift in Sources */,
+				0488CE462581506D00C9EC71 /* VersionsViewController.swift in Sources */,
 				0488CE0925814E4200C9EC71 /* AppDelegate.swift in Sources */,
+				0488CE5B258151A700C9EC71 /* VersionsViewModel.swift in Sources */,
 				0488CE0B25814E4200C9EC71 /* SceneDelegate.swift in Sources */,
+				0488CE4E2581508700C9EC71 /* VersionDetailViewController.swift in Sources */,
+				0488CE692581522500C9EC71 /* VersionsDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +505,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CT839J8Y85;
 				INFOPLIST_FILE = iOSVersions/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,6 +524,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CT839J8Y85;
 				INFOPLIST_FILE = iOSVersions/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -587,6 +657,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0488CE3F25814FD000C9EC71 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.15.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0488CE4025814FD000C9EC71 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0488CE3F25814FD000C9EC71 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0488CDFD25814E4200C9EC71 /* Project object */;
 }
