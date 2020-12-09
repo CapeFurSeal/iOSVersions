@@ -19,6 +19,7 @@
 		0488CE4E2581508700C9EC71 /* VersionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488CE4D2581508700C9EC71 /* VersionDetailViewController.swift */; };
 		0488CE5B258151A700C9EC71 /* VersionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488CE5A258151A700C9EC71 /* VersionsViewModel.swift */; };
 		0488CE692581522500C9EC71 /* VersionsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488CE682581522500C9EC71 /* VersionsDataSource.swift */; };
+		0488CE6E2581528800C9EC71 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488CE6D2581528800C9EC71 /* WebService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		0488CE4D2581508700C9EC71 /* VersionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionDetailViewController.swift; sourceTree = "<group>"; };
 		0488CE5A258151A700C9EC71 /* VersionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionsViewModel.swift; sourceTree = "<group>"; };
 		0488CE682581522500C9EC71 /* VersionsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionsDataSource.swift; sourceTree = "<group>"; };
+		0488CE6D2581528800C9EC71 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 		0488CE3B25814E8700C9EC71 /* View Model */ = {
 			isa = PBXGroup;
 			children = (
+				0488CE5A258151A700C9EC71 /* VersionsViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 		0488CE3C25814E9000C9EC71 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				0488CE6D2581528800C9EC71 /* WebService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -173,7 +177,6 @@
 			isa = PBXGroup;
 			children = (
 				0488CE452581506D00C9EC71 /* VersionsViewController.swift */,
-				0488CE5A258151A700C9EC71 /* VersionsViewModel.swift */,
 				0488CE682581522500C9EC71 /* VersionsDataSource.swift */,
 			);
 			path = Versions;
@@ -325,6 +328,7 @@
 			files = (
 				0488CE462581506D00C9EC71 /* VersionsViewController.swift in Sources */,
 				0488CE0925814E4200C9EC71 /* AppDelegate.swift in Sources */,
+				0488CE6E2581528800C9EC71 /* WebService.swift in Sources */,
 				0488CE5B258151A700C9EC71 /* VersionsViewModel.swift in Sources */,
 				0488CE0B25814E4200C9EC71 /* SceneDelegate.swift in Sources */,
 				0488CE4E2581508700C9EC71 /* VersionDetailViewController.swift in Sources */,
