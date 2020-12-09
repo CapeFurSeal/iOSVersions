@@ -5,11 +5,11 @@
 
 
 import Foundation
-struct Versions : Codable {
-	let name : String?
-	let version : String?
-	let released : String?
-	let image : String?
+struct Version: Codable {
+	let name: String?
+	let version: String?
+	let released: String?
+	let image: String?
 
 	enum CodingKeys: String, CodingKey {
 		case name = "name"
@@ -25,4 +25,14 @@ struct Versions : Codable {
 		released = try values.decodeIfPresent(String.self, forKey: .released)
 		image = try values.decodeIfPresent(String.self, forKey: .image)
 	}
+    
+    internal func returnUrlFromString(image: String?) -> URL? {
+        guard let imageString = image else {
+            return nil
+        }
+        guard let thumbnailUrl = URL(string: "\(WebService.basePath)\(imageString)") else {
+            return nil
+        }
+        return thumbnailUrl
+    }
 }

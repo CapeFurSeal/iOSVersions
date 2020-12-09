@@ -1,5 +1,5 @@
 //
-//  VersionsDataSource.swift
+//  VersionDetailDataSource.swift
 //  iOSVersions
 //
 //  Created by mac on 2020/12/09.
@@ -9,13 +9,13 @@ import Foundation
 import UIKit
 import Combine
 
-class VersionsDataSource: NSObject {
-    @Published internal var versions = [Version]()
+class VersionDetailDataSource: NSObject {
+    @Published internal var version: Version?
 }
 
-extension VersionsDataSource: UITableViewDataSource {
+extension VersionDetailDataSource: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        versions.count
+        1
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -23,9 +23,9 @@ extension VersionsDataSource: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier:"VersionsTableViewCell", for: indexPath)
-          as? VersionsTableViewCell {
-            cell.bindVersionsTableViewCell(version: versions[indexPath.row])
+        if let cell = tableView.dequeueReusableCell(withIdentifier:"VersionDetailTableViewCell", for: indexPath)
+          as? VersionDetailTableViewCell {
+            cell.bindVersionDetailTableViewCell(version: version)
             return cell
         }
         return UITableViewCell()

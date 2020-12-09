@@ -5,8 +5,8 @@
 
 import Foundation
 
-struct IosVersions : Codable {
-	let versions : [Versions]?
+struct IosVersion: Codable {
+	let versions: [Version]?
 
 	enum CodingKeys: String, CodingKey {
 		case versions = "versions"
@@ -14,6 +14,6 @@ struct IosVersions : Codable {
 
 	init(from decoder: Decoder) throws {
 		let values = try decoder.container(keyedBy: CodingKeys.self)
-		versions = try values.decodeIfPresent([Versions].self, forKey: .versions)
+		versions = try values.decodeIfPresent([Version].self, forKey: .versions)
 	}
 }

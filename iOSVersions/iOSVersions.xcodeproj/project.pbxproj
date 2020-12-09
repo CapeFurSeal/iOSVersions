@@ -20,8 +20,11 @@
 		0488CE5B258151A700C9EC71 /* VersionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488CE5A258151A700C9EC71 /* VersionsViewModel.swift */; };
 		0488CE692581522500C9EC71 /* VersionsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488CE682581522500C9EC71 /* VersionsDataSource.swift */; };
 		0488CE6E2581528800C9EC71 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488CE6D2581528800C9EC71 /* WebService.swift */; };
-		0488CE742581548D00C9EC71 /* BaseVersions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488CE722581548D00C9EC71 /* BaseVersions.swift */; };
-		0488CE752581548D00C9EC71 /* Versions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488CE732581548D00C9EC71 /* Versions.swift */; };
+		0488CE742581548D00C9EC71 /* IosVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488CE722581548D00C9EC71 /* IosVersion.swift */; };
+		0488CE752581548D00C9EC71 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488CE732581548D00C9EC71 /* Version.swift */; };
+		0488CE80258157CB00C9EC71 /* VersionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488CE7F258157CB00C9EC71 /* VersionsTableViewCell.swift */; };
+		0488CE8525815E8400C9EC71 /* VersionDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488CE8425815E8400C9EC71 /* VersionDetailTableViewCell.swift */; };
+		0488CE8A2581600800C9EC71 /* VersionDetailDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488CE892581600800C9EC71 /* VersionDetailDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +63,11 @@
 		0488CE5A258151A700C9EC71 /* VersionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionsViewModel.swift; sourceTree = "<group>"; };
 		0488CE682581522500C9EC71 /* VersionsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionsDataSource.swift; sourceTree = "<group>"; };
 		0488CE6D2581528800C9EC71 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
-		0488CE722581548D00C9EC71 /* BaseVersions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVersions.swift; sourceTree = "<group>"; };
-		0488CE732581548D00C9EC71 /* Versions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Versions.swift; sourceTree = "<group>"; };
+		0488CE722581548D00C9EC71 /* IosVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IosVersion.swift; sourceTree = "<group>"; };
+		0488CE732581548D00C9EC71 /* Version.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
+		0488CE7F258157CB00C9EC71 /* VersionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionsTableViewCell.swift; sourceTree = "<group>"; };
+		0488CE8425815E8400C9EC71 /* VersionDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionDetailTableViewCell.swift; sourceTree = "<group>"; };
+		0488CE892581600800C9EC71 /* VersionDetailDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionDetailDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,8 +179,8 @@
 		0488CE3E25814EC300C9EC71 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0488CE722581548D00C9EC71 /* BaseVersions.swift */,
-				0488CE732581548D00C9EC71 /* Versions.swift */,
+				0488CE722581548D00C9EC71 /* IosVersion.swift */,
+				0488CE732581548D00C9EC71 /* Version.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,6 +190,7 @@
 			children = (
 				0488CE452581506D00C9EC71 /* VersionsViewController.swift */,
 				0488CE682581522500C9EC71 /* VersionsDataSource.swift */,
+				0488CE7F258157CB00C9EC71 /* VersionsTableViewCell.swift */,
 			);
 			path = Versions;
 			sourceTree = "<group>";
@@ -192,6 +199,8 @@
 			isa = PBXGroup;
 			children = (
 				0488CE4D2581508700C9EC71 /* VersionDetailViewController.swift */,
+				0488CE8425815E8400C9EC71 /* VersionDetailTableViewCell.swift */,
+				0488CE892581600800C9EC71 /* VersionDetailDataSource.swift */,
 			);
 			path = "Versions Detail";
 			sourceTree = "<group>";
@@ -332,11 +341,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0488CE8A2581600800C9EC71 /* VersionDetailDataSource.swift in Sources */,
+				0488CE80258157CB00C9EC71 /* VersionsTableViewCell.swift in Sources */,
 				0488CE462581506D00C9EC71 /* VersionsViewController.swift in Sources */,
-				0488CE742581548D00C9EC71 /* BaseVersions.swift in Sources */,
+				0488CE742581548D00C9EC71 /* IosVersion.swift in Sources */,
 				0488CE0925814E4200C9EC71 /* AppDelegate.swift in Sources */,
+				0488CE8525815E8400C9EC71 /* VersionDetailTableViewCell.swift in Sources */,
 				0488CE6E2581528800C9EC71 /* WebService.swift in Sources */,
-				0488CE752581548D00C9EC71 /* Versions.swift in Sources */,
+				0488CE752581548D00C9EC71 /* Version.swift in Sources */,
 				0488CE5B258151A700C9EC71 /* VersionsViewModel.swift in Sources */,
 				0488CE0B25814E4200C9EC71 /* SceneDelegate.swift in Sources */,
 				0488CE4E2581508700C9EC71 /* VersionDetailViewController.swift in Sources */,
